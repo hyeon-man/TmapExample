@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 
 public class RootController {
-    @RequestMapping("/")
-    public String index(){
+    @RequestMapping("/tmapV3")
+    public String tmapV3(){
 
         return "tmapV3";
     }
@@ -16,4 +16,5 @@ public class RootController {
 
         return "tmapV2";
     }
+
 }

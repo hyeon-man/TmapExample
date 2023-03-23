@@ -24,9 +24,11 @@ public class TmapRestController {
     }
 
     @PostMapping("/marker")
-    public void addMarker(@RequestBody Marker marker) {
+    public Marker addMarker(@RequestBody Marker marker) {
 
         System.out.println(marker.getLat() + " lat 값, " + marker.getLng() + " lng 값");
+
+        return marker;
     }
 }
 
