@@ -7,14 +7,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class RootController {
     @RequestMapping("/tmapV3")
-    public String tmapV3(){
+    public String tmapV3() {
 
         return "tmapV3";
     }
+
     @RequestMapping("/tmapV2")
-    public String tMapv2(){
+    public String tMapv2() {
 
         return "tmapV2";
     }
 
+    @RequestMapping("/weather")
+    public String weather() {
+
+        return "weather";
+    }
 }
